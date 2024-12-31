@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            display: block;
+            justify-content: center;
+            align-items: center;
+            min-height: 200vh;
+        }
+
+        .certificate-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 750px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            padding-left: 50px;
+            margin-left: 350px;
+            border: 2px solid black;
+            /* text-align: center; */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .certificate-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        .organization {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .view-btn {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+            animation: fadeIn 1.8s ease;
+        }
+
+        .view-btn:hover {
+            background: #45a049;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-card">
+        <div class="certificate-title">FULL  STACK JAVA DEV </div>
+        <div class="organization">Issued by: UDEMY</div>
+        <a href="Udemy Java Course Certificate.pdf" class="view-btn">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+        <div class="certificate-title"> TATA Crucible Campus Quiz 2024</div>
+        <div class="organization">Issued by:  Tata Group</div>
+        <a href="Unstop.pdf" class="view-btn">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+        <div class="certificate-title">Certificate of Excellence</div>
+        <div class="organization">Issued by: Code Academy</div>
+        <a href="#" class="view-btn">View Certificate</a>
+    </div>
+</body>
+</html>

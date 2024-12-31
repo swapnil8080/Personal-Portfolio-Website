@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="resume.pdf" target="_self">View Resume</a></li>
+            <li><a href="certification.html" target="_self">Certifications</a></li>
+            <li><a href="https://github.com/swapnilshelake" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/swapnilshelake" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+        <h2>Hi, I'm Swapnil Shelake</h2>
+    <p>Aspiring Web Developer | Innovator | Tech Enthusiast</p>
+    <button class="btn" id="learnMoreBtn">Learn More</button>
+</div>
+
+    <div class="main">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am currently pursuing my B.E. in Computer Engineering from SPPU. Passionate about web development and always eager to learn new technologies and bring creative ideas to life.</p>
+            <li class="btn1"><a href="#contact1">Contact Me</a></li>
+        </section>
+        <section class="image">
+            <img src="me.jpg" alt="">
+        </section>
+    </div>
+
+    <section  class="myskills">
+        <div class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/48/css3.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-color-tal-revivo.png" alt="jQuery">
+                    <p>jQuery</p>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/48/sql.png" alt="SQL">
+                    <p>SQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h1>Personal Portfolio Website</h1>
+            <p> 
+                A professional and responsive platform showcasing skills, projects, and achievements. Features
+                 include an interactive project gallery, about section, resume download, and contact form. Designed 
+                 to highlight individuality and attract potential employers or clients.</p>
+            <a href="details.html" class="details-btn">More Details</a>
+          </div>
+          <div class="project">
+            <h1>Online Shopping Platform</h1>
+            <p> 
+                A user-friendly platform for seamless online shopping.  Designed with a responsive and modern interface for an enhanced shopping experience.</p>
+            <a href="details.html" class="details-btn">More Details</a>
+          </div>
+          <div class="project">
+            <h1>Burger Bros</h1>
+            <p>A visually engaging and responsive website for a gourmet burger restaurant. Features include an 
+                interactive menu, online ordering, customer reviews, contact details with map integration, and 
+                sleek animations for an immersive user experience</p>
+            <a href="details.html" class="details-btn">More Details</a>
+          </div>
+    </div>
+</section>
+
+<section class="contact" id="contact1">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="index.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <!-- <div class="footer">
+            <p>&copy; 2024 Your Company Name | <a href="#">Privacy Policy</a></p>
+        </div> -->
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 Swapnil Shelake. All rights reserved.</p>
+    <a href="">privacy Policy</a>
+</footer>
+
+<script>
+    document.getElementById('learnMoreBtn').addEventListener('click', function() {
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
